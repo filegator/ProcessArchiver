@@ -1,17 +1,17 @@
 # ProcessArchiver
-Alternate ZIP processing adapter for FileGator.
+Alternative ZIP processing adapter for FileGator. Experimental, do not use on production.
 
 ## Installation
 
-Install Symfony component Proccess with composer:
+1. Go to filegator folder and install Proccess lib with composer:
 ```
 composer require symfony/process
 ```
 
-Put the `ProcessArchiver.php` file into filegator's folder `filegator/backend/Services/Archiver/Adapters/`
+2. Put the `ProcessArchiver.php` file into filegator's folder `filegator/backend/Services/Archiver/Adapters/`
 
 
-Replace your current `ArchiverInterface` section in your `configuration.php` file with this:
+3. Replace your current `ArchiverInterface` section in your `configuration.php` file with this:
 
 ```
         'Filegator\Services\Archiver\ArchiverInterface' => [
@@ -29,5 +29,6 @@ Replace your current `ArchiverInterface` section in your `configuration.php` fil
 ## Known issues
 
 - UTF8 file names encoding can be garbled
+- Not tested on windows/mac
 
 
