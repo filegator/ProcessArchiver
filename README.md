@@ -1,5 +1,6 @@
 # ProcessArchiver
-Alternative ZIP processing adapter for FileGator. Experimental, do not use on production.
+Alternative ZIP processing adapter for FileGator. It uses OS process to perform zip/unzip operations instead of php-zip extension.
+Experimental, do not use on production.
 
 ## Installation
 
